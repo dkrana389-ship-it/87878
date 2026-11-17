@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Warranty Reminder",
+    "slug": "warranty-reminder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "warrantyreminder",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.deepinnovations.warrantyreminder",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B1F4B"
+      },
+      "permissions": ["POST_NOTIFICATIONS", "CAMERA", "INTERNET", "ACCESS_NETWORK_STATE"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0B1F4B"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#0B1F4B"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow access to your photos to attach product pictures.",
+          "cameraPermission": "Allow camera access to take product photos."
+        }
+      ]
+    ],
+    "experiments": {}
+  }
+}
